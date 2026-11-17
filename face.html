@@ -1,0 +1,9 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>臉部辨識｜MediaPipe</title><link rel="stylesheet" href="common.css"></head><body data-mode="face"><main>
+<nav><a href="index.html">← 回首頁</a><a href="hand.html">手部辨識</a><a href="face.html">臉部辨識</a></nav>
+<h1>臉部辨識</h1>
+<p class="note">正面看鏡頭，試試轉頭、眨眼、張嘴。每張臉 478 個點。</p>
+<div class="bar"><button id="toggle" class="primary" type="button">啟動攝影機</button><span id="status" class="status">按下按鈕開始</span></div>
+<div class="stage"><video id="video" playsinline muted></video><canvas id="canvas"></canvas></div>
+<p class="note">影像只在你的裝置上計算，不錄影、不上傳。這是動作追蹤，不是辨認你是誰。</p>
+</main><script type="module" src="app.js"></script></body></html>

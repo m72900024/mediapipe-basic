@@ -1,0 +1,19 @@
+:root{--bg:#f3f5f4;--fg:#1d2422;--muted:#5c6763;--line:#d2d9d5;--accent:#2f6b5a;--panel:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141917;--fg:#e2e7e4;--muted:#9aa5a0;--line:#33403a;--accent:#7cc3ad;--panel:#1c2320}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 "PingFang TC","Noto Sans TC",system-ui,sans-serif;padding:16px}
+main{max-width:960px;margin:0 auto;display:grid;gap:12px}
+h1{font-size:1.3rem;margin:0}
+nav{display:flex;gap:12px;flex-wrap:wrap;font-size:.95rem}
+nav a{color:var(--accent)}
+.bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+button{font:inherit;padding:.5rem 1.1rem;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--fg);cursor:pointer}
+button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.status{font-weight:600}
+.status.ok{color:#2e8b57}.status.no{color:#c0392b}
+.stage{position:relative;width:100%;background:#000;border-radius:10px;overflow:hidden;aspect-ratio:4/3}
+.stage video,.stage canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transform:scaleX(-1)}
+.note{color:var(--muted);font-size:.9rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.cards a{display:block;padding:20px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--fg);text-decoration:none}
+.cards a strong{display:block;font-size:1.2rem;color:var(--accent)}
